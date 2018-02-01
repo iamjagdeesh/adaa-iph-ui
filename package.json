@@ -1,0 +1,49 @@
+{
+  "name": "iph-ui",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "6.10.2",
+    "npm": "3.10.10"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "d3": "^3.5.0",
+    "datatables-bootstrap3-plugin": "^0.5.0",
+    "datatables.net": "^1.10.15",
+    "file-system": "^2.2.2",
+    "fixed-data-table": "^0.6.3",
+    "fs": "0.0.1-security",
+    "fs-extra": "^2.0.0",
+    "jquery": "^3.1.1",
+    "jquery-mapael": "^2.0.0",
+    "jquery.mousewheel": "^3.1.9",
+    "loadash": "0.0.1",
+    "process-argv": "^1.0.0",
+    "properties": "^1.2.1",
+    "properties-reader": "0.0.15",
+    "raphael": "^2.2.7",
+    "rc-slider": "^6.1.2",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
+    "react-bootstrap-table": "^2.11.2",
+    "react-dom": "^15.4.2",
+    "react-fa": "^4.1.2",
+    "react-router": "^3.0.2",
+    "react-scripts": "0.8.5",
+    "react-select": "^1.0.0-rc.3",
+    "react-selectable": "^1.1.0",
+    "react-skylight": "^0.4.1",
+    "react-timer-mixin": "0.13.3",
+    "read-yaml": "^1.0.0",
+    "topojson": "^2.2.0"
+  },
+  "scripts": {
+    "postinstall": "node postInstall.js",
+    "start": "node setconfig.js",
+    "poststart": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

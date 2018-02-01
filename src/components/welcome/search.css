@@ -1,0 +1,66 @@
+//colors
+$grey: #cacaca;
+
+// main
+#page_container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+// search input
+#accordion_search_bar_container {
+  position: relative;
+  &:after { 
+    content: '\e003';
+    font-family: Glyphicons Halflings;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px; 
+  }  
+  #accordion_search_bar {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid $grey;
+    border-radius: 25px;
+    outline: 0;
+  }
+}
+
+// make all the line clickable
+.panel-title { 
+  a {
+    display: block;
+  }
+}
+.panel-heading{
+	width:300px;
+}
+.panel.panel-primary{
+	border:0px;
+	box-shadow:none;
+	
+}
+#accordion_search_bar{
+	width:300px;
+}
+.panel-collapse{
+	width: 300px;
+    max-height: 200px;
+    overflow: auto;
+}
+.panel-group{
+	    max-height: 225px;
+    overflow: auto;
+    width: 300px;
+	
+}
+#accordion{
+	display:none;
+}
+.searchAccordionIcon{
+	    width: 20px;
+}

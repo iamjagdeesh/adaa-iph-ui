@@ -1,0 +1,119 @@
+body.welcome-component { 
+  background: url(../../../public/icons/bg-welcome-screen.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body.welcome-component{
+    background-color: #000 !important;
+}
+
+
+@media only screen and (min-width : 768px) and (max-width:869px) {
+    .home-srch-panel { width: 550px; margin-left: 100px;}
+    .home-srch-panel h1{font-size: 24px;}
+    .home-srch-panel p{font-size: 12px;}
+    .welcome-component .btn-start{ font-size: 12px;}
+    .home-srch-panel-ar{float: right; margin-right: 100px;}
+}
+
+@media only screen and (min-width : 870px) and (max-width:1049px) {
+    .home-srch-panel { width: 550px; margin-left: 150px;}
+    .home-srch-panel h1{font-size: 30px;}
+    .home-srch-panel p{font-size: 14px;}
+    .welcome-component .btn-start{ font-size: 14px;}
+    .home-srch-panel-ar{float: right; margin-right: 150px;}
+}
+
+@media only screen and (min-width : 1050px) and (max-width : 1199px){
+    .home-srch-panel { width: 550px; margin-left: 200px;}
+    .home-srch-panel h1{font-size: 30px;}
+    .home-srch-panel p{font-size: 14px;}
+    .welcome-component .btn-start{ font-size: 14px;}
+    .home-srch-panel-ar{float: right; margin-right: 100px;}
+}
+
+@media only screen and (min-width:1200px) {
+    .home-srch-panel { width: 550px; margin-left: 250px;}
+    .home-srch-panel h1{font-size: 30px;}
+    .home-srch-panel p{font-size: 14px;}
+    .welcome-component .btn-start{ font-size: 14px;}
+    .home-srch-panel-ar{float: right; margin-right: 100px;}
+}
+
+body.welcome-component #root{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.2) !important;
+    }
+    
+.home-srch-panel {
+    width: 550px;
+    margin-top: 6%;
+    padding:0;
+    background-color:transparent !important;
+    border:none !important;
+  
+}
+.home-srch-panel:lang(ar){
+    width: 550px;
+    margin-top: 150px;
+    padding:0;
+    background-color:transparent !important;
+    border:none !important;
+  
+}
+
+.home-srch-panel h1{color:#fff;margin: 0;}
+.home-srch-panel p{color: #fff; padding: 60px 0 !important; opacity: 0.3;text-align: justify;}
+.home-srch-panel .panel-body{padding: 0 !important;}
+.welcome-component .btn-start,.welcome-component .btn-start:hover,.welcome-component .btn-start:lang(ar){
+    text-transform: capitalize; 
+  background-color: transparent !important;
+    color:#fff !important;
+    border-radius: 50px !important;
+    border-color: #fff !important;
+    padding: 15px 55px 15px 30px;
+    background: url(../../../public/icons/icons_sprite.png) no-repeat 0px 0px;
+    background-position: right -1950px;
+    transition: 0s;
+    }
+
+.welcome-component .btn-start:hover,.welcome-component .btn-start:lang(ar):hover{
+    background-position: right -2000px;
+    transition: 0s;
+    color:#00b186 !important;
+    border-radius: 50px !important;
+    border-color: #00b186 !important;
+}
+    
+.welcome-component .btn-start:lang(ar) {
+    background-position: 0 -150px;
+    padding: 15px 30px 15px 55px;
+}
+.welcome-component .btn-start:lang(ar):hover{
+     background-position: 0 -200px;
+    padding: 15px 30px 15px 55px;
+}
+.welcome-component .btn-start:active,.welcome-component .btn-start:focus{outline: 0 !important;}
+.welcome-component .btn-start .fa-icon{margin-left: 15px;}
+.welcome-component .fa-icon{color:#00b186;font-size:18px !important;}
+
+body.welcome-component:lang(ar) { 
+  background: url(../../../public/icons/bg-welcome-screen-arabic.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+article.accordion section h3:lang(ar) {
+    padding-right: 22px;
+}
+
+div.skylight-dialog a:hover{text-decoration: none;}

@@ -1,0 +1,336 @@
+/*html  {
+    overflow-y: auto;
+}*/
+/*.graphBody{
+    overflow-y: auto;
+}*/
+body.common-component {
+    background: #222222 !important;
+}
+
+.garphic-Text {
+    color: #ffffff;
+    font-weight:100;
+    font-weight: 200;
+    font-size: 28px;
+    padding-left: 60px !important;
+    margin-top: 25px;
+}
+.Graphic-rightMenu img{
+    float: right;
+    
+}
+.Graphic-Close-btn img
+{
+    margin-right: 50px;
+    float: right;
+}
+.garphic-Text:lang(ar ){
+    padding-right: 60px !important;
+}
+
+.Graphic-Close-btn img:lang(ar)
+{
+    float: left;
+}
+
+
+.Graphic-leftMenu{
+    padding-left: 75px !important;
+}
+.iph-graphicPage-details h4
+{
+    color: #ffffff;
+}
+.iph-data-source, .iph-data-source h5
+{
+    color:#696666;
+}
+
+.data-source-toggle-button {
+    border: none;
+    background: none;
+    outline:none;
+    color: #6f6f6f !important;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 0px;
+}
+
+.btn-outline {
+       background-color: transparent !important;
+    color: #6f6f6f !important;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: 1px solid #6f6f6f !important;
+    border-radius: 35px !important;
+}
+.iph-Benchmarks-btns a{
+    margin: 5px;    
+}
+
+.iph-Benchmarks-btns img{
+    float: left;
+}
+
+.iph-Addcountries, .iph-Benchmarks-btns{
+    margin-bottom: 20px;
+}
+.add-remove-country{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: gray;
+}
+.graphHeader{
+   display: inline-flex;     
+    }
+.countriesHeaderMargin{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.move-root{
+    position: relative;
+    left: -450px;
+    transition: 0.3s;
+}
+.StopClickEvent{
+    pointer-events: none;
+}
+
+.main1 {
+      margin-left: 300px;
+      overflow:hidden;
+    }
+    .item1 {
+      width:50px;
+      height:30px;
+      margin:0px;
+      float:left;
+      text-align:center;
+      border:1px solid #ccc;
+      padding:10px;
+    }
+    .item1.selected {
+      background: #ddd;
+    }
+      .sidebar1 {
+      width:300px;
+      float:left;
+      line-height:150%;
+    }
+    .info1 {
+      position:fixed;
+      top: 70px;
+      left:50px;
+      width:250px;
+    }
+   
+.rc-slider-mark-text-active {
+    color: #fcf8e3 !important;
+    opacity: 1 !important;
+    font-size: 14px !important;
+}
+.rc-slider-mark-text {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    color: #999;
+    opacity: 0.5;
+}
+.rc-slider{
+    width: 80% !important;
+    margin-left: 10% !important;
+}
+.rd3-chart{
+    overflow: visible !important;
+    margin-top: 1% !important;
+}
+/*.iph-Addcountries .Select-value-icon{  Hiding the close buttons on multiselect to prevent remove functionality
+    display: none !important;
+}*/
+/*.iph-Addcountries .Select-clear{  Hiding the close buttons on multiselect to prevent remove functionality
+    display: none !important;
+}*/
+.btn-outline.active{
+    background-color: rgb(169, 169, 169) !important;
+    color: #ffffff !important;
+}
+
+.benchMark0:hover, .benchMark1:hover, .benchMark2:hover, .benchMark3:hover, .benchMark4:hover{
+    border: 1px solid #00b186 !important;
+    color: #00b186 !important;
+}
+.benchMark0.active:hover, .benchMark1.active:hover, .benchMark2.active:hover, .benchMark3.active:hover, .benchMark4.active:hover{
+    border: 1px solid #6f6f6f !important;
+        color: #ffffff !important;
+    }
+.rd3-linechart h2 {
+    margin: 0 0 10px;
+    /* background: red; */
+    float: left;
+    margin-left: 20px;
+    word-wrap: break-word;
+}
+.rd3-linechart p {
+    margin: 0 0 10px;
+    /* background: red; */
+    float: left;
+    margin-left: 20px;
+    word-wrap: break-word;
+}
+.container-fluid{
+    width: 100%;
+}
+/*.Slider{
+    height: 80px;
+}*/
+.benchmarkDatasource{
+overflow-y: auto;
+height:370px ;    
+}
+.Addcountries,.section.Graphs .Select-control ,.section.Graphs .Select-menu-outer,.section.Graphs .Select.Select--multi{
+    width: 100% !important;
+}
+.closeCountryeng{
+ cursor: pointer; 
+ cursor: hand; 
+ float: right !important;
+ margin-left: 5px !important;    
+}
+.closeCountryar{
+ cursor: pointer; 
+ cursor: hand; 
+ margin-right: 5px !important;    
+}
+
+.rc-slider-rail {
+    background-color: #8f8181 !important;
+}
+
+.iph-Benchmarks-btns a, 
+.iph-Benchmarks-btns a.active, 
+.iph-Benchmarks-btns a.active:hover,.iph-Benchmarks-btns a:hover,.iph-Benchmarks-btns a:lang(ar),
+.iph-Benchmarks-btns a.active:lang(ar),
+.iph-Benchmarks-btns a.active:lang(ar):hover{
+  /*    background: url(../../../public/icons/add-normal.png) no-repeat 10px 5px;*/
+        padding: 5px 20px 5px 35px; 
+        background: url(../../../public/icons/icon_sprite1.png) no-repeat 0px 0px;
+        background-position: 10px -1045px;
+}
+
+
+.iph-Benchmarks-btns a:hover{
+    background-position: 10px -1070px;
+}
+
+.iph-Benchmarks-btns a:lang(ar),
+.iph-Benchmarks-btns a.active:lang(ar),
+.iph-Benchmarks-btns a.active:lang(ar):hover{
+    padding: 6px 35px 8px 20px;
+    background-position: right -1043px;
+}
+.iph-Benchmarks-btns a:lang(ar):hover{
+    padding: 6px 35px 8px 20px;
+    background-position: right -1068px;
+}
+
+.tipCoutryName{
+    color: #fff;
+    font-size: 24px;
+}
+.rd3-linechart span:nth-child(1) h2{
+    margin-top: 8px !important;
+}
+.rd3-linechart span:nth-child(1) h2>p{
+    margin-top: 2px !important;
+}
+
+ /*--------------------- graphic line chart ------------------------*/
+
+.Graphic-leftMenu .Slider .rc-slider-dot-active {
+    border-color: #222222;
+}
+
+.Graphic-leftMenu .Slider .rc-slider-track {
+    position: absolute;
+    left: 0;
+    height: 3px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.Graphic-leftMenu .Slider .rc-slider-rail {
+    position: absolute;
+    width: 100%;
+    background-color: #444141;
+    height: 2px;
+}
+.Graphic-leftMenu .Slider{
+    width: 100%;
+    margin: auto;
+}
+
+.Graphic-leftMenu .Slider .rc-slider-handle {
+    position: absolute;
+    margin-left: -7px;
+    margin-top: -6px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: solid 1px #222221;
+    background-color: #fff;
+}
+.Graphic-leftMenu .Slider .rc-slider-handle:hover {
+    border-color: #0db39a;
+}
+
+.Graphic-leftMenu .Slider .rc-slider-dot-active {
+    border-color: #222222;
+}
+
+.Graphic-leftMenu .Slider .rc-slider-dot {
+    position: absolute;
+    bottom: -2px;
+    margin-left: -4px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #6d6d6d;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.DataSourceFrequency, .DataSourceYear{
+    color: #ffffff !important;
+}   
+
+.toolTipColor{
+    font-size:12px;
+}
+.tipCoutryName{
+    font-size: 18px;
+}
+
+.iph-Benchmarks-btns .btn-outline{
+    transition: 0s;
+}
+
+.Graphic-leftMenu .rd3-linechart:lang(ar){
+    float: right !important;
+    margin-right: 35px;
+}
+.graphicsCrum{
+    padding: 1%;
+    padding-left: 5% !important;
+    color: rgb(169, 169, 169);
+}
+.graphicsCrum_ar{
+    padding: 1%;
+    padding-right: 2% !important;
+    color: rgb(169, 169, 169);
+}
+

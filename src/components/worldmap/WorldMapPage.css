@@ -1,0 +1,488 @@
+body.worldmap-component{
+    background-color: #222222 !important;
+}
+.mapael .mapTooltip {
+    position: absolute;
+    background-color: #000;
+    moz-opacity: 0.80;
+    opacity: 0.80;
+    filter: alpha(opacity=80);
+    border-radius: 0;
+    padding: 10px 15px;
+    z-index: 1000;
+    max-width: 200px;
+    min-width: 150px;
+    display: none;
+    color: #0892b7;
+    font-size: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+/*.mapael .mapTooltip:before{
+ content: "";
+    border-bottom: 10px solid #000;
+    border-right: 10px solid transparent;
+    border-left: 0 solid transparent;
+    left: 0;
+    position: absolute;
+    top: -10px !important;
+}*/
+.mapael .mapTooltip .countryHover{color: #fff; font-size: 18px; text-align: center; display: block;}
+.mapael .mapTooltip .scoreData{font-size:12px;}
+.mapael .map {
+    position: relative;
+    background-color: #222222 ;
+    border-radius: 5px;
+   /* height: 600px;
+    min-height: 450px !important;*/
+    
+}
+.mapael svg{
+    margin-top: 0%;
+    padding-left: 15%;
+    width: 100% !important;
+    overflow: visible !important;
+
+    /*height: auto !important;*/
+    /*max-height: 800px;*/
+}
+.mapael svg:lang(ar){
+    margin-top: 0%;
+    padding-left: 15%;
+    width: 100% !important;
+    overflow: visible !important;
+    right:-250px !important;
+
+    /*height: auto !important;*/
+    /*max-height: 800px;*/
+}
+
+@media screen and  (min-height: 500px) and (max-height: 800px) {
+
+   /* .mapael svg {
+    max-height: 800px !important;
+    }
+    .mapael .map {
+    height: 500px !important;
+    }
+    .mapael {
+    height: 520px !important;
+ }*/
+}
+
+
+/* For all zoom buttons */
+.mapael .zoomButton {
+    background-color: rgba(255,255,255,0.2);
+    /* border: 1px solid #ccc; */
+    /* color: #000; */
+    /* text-align: center; */
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    /* top: 0; */
+    /* font-weight: bold; */
+    /* left: 10px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    /* user-select: none; */
+    /* margin-top: 5px; */
+    /* display: block; */
+}
+
+/* Reset Zoom button first */
+.mapael .zoomReset {
+    top: 10px;
+    left: 15px;
+    margin-top: 115px;
+    display: none;
+}
+
+/* Then Zoom In button */
+.mapael .zoomIn {
+    top: 33px;
+    left: 15px;
+    margin-top: 118px;
+}
+
+/* Then Zoom Out button */
+.mapael .zoomOut {
+    top: 56px;
+    left: 15px;
+    margin-top: 120px;
+}
+.areaLegendimg {
+    float: right;
+    bottom: 50px !important;
+    position: fixed;
+    text-align: right;
+    margin-left: 10%;
+    width: 300px;
+}
+
+.footer {
+    position: fixed!important;
+    height: 50px;
+    bottom: 0px;
+    margin: auto !important;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+
+.footer.timeline ul{text-align: center; padding: 0; margin-left: -85px;}
+.footer.timeline ul li{
+    margin-left: 76px;
+    display: inline-block;
+    }
+
+.footer.timeline ul li a{
+    position: absolute;
+    padding-bottom: 6px;
+    color: grey;    
+    text-decoration: none;
+    font-size: 10px;
+    z-index: 4;
+}
+.footer.timeline ul li a.active{
+    color: #fff;    
+    font-size: 12px;
+    padding-bottom: 4px;
+}
+
+.footer.timeline ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -5px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.footer.timeline ul li a.active::after {
+   background-color: #fff;   
+    height: 10px;
+    width: 10px;
+}
+
+.footer.timeline .filling-line {
+       /* -webkit-transform: scaleX(0.0775); */
+    -ms-transform: scaleX(0.44);
+    transform: scaleX(0.44);
+    position: absolute;
+    /* z-index: 5; */
+    /* left: 0; */
+    bottom: -8px;
+    /* margin: 0 auto; */
+    height: 2px;
+    width: 97%;
+    background-color: grey;
+    /* -webkit-transform: scaleX(0); */
+    -ms-transform: scaleX(0);
+    /* transform: scaleX(0); */
+    /* -webkit-transform-origin: left center; */
+    -ms-transform-origin: left center;
+    /* transform-origin: left center; */
+    /* -webkit-transition: -webkit-transform 0.3s; */
+    /* transition: -webkit-transform 0.3s; */
+    /* transition: transform 0.3s; */
+    /* transition: transform 0.3s, -webkit-transform 0.3s; */
+}
+#initialLoad{
+    background-color:  #222222;
+    z-index: 999;
+    position: absolute;
+    left:0 ;
+    top: -20%;
+    width: 100%;
+    height: 150%;
+    display: none;
+    opacity: 0.5;
+}
+#initialLoad:lang(ar){
+    background-color:  #222222;
+    z-index: 999;
+    position: absolute;
+    left:0%;
+    top: -20%;
+    width: 100%;
+    height: 150%;
+    display: none;
+    opacity: 0.5;
+}
+
+#initialLoadPanel{
+    background-color:  #222222;
+    z-index: 999;
+    position: absolute;
+    left:0%;
+    top: -20%;
+    width: 100%;
+    height: 150%;
+    display: none;
+    opacity: 0.5;
+}
+#initialLoadPanel:lang(ar){
+    background-color:  #222222;
+    z-index: 999;
+    position: absolute;
+    top: -20%;
+    width: 100%;
+    height: 150%;
+    display: none;
+    opacity: 0.5;
+}
+
+.loading-gif{
+    top: 40%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    }
+.loading-Init{
+    left:50%;
+    top: 40%;
+    position: absolute;
+    }
+
+
+.loading-gif:lang(ar){
+    top: 40%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+     -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    }
+
+.loading-gif-ar{
+   top: 40%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    }
+  .footer.timeline hr {
+       /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    /* border: 0; */
+    border-top: 2px solid grey;
+    width: 80px;
+    /* display: inline; */
+    /* z-index: 66; */
+    position: absolute;
+    margin-left: 10px;
+    /* margin-top: 23px; */
+    /* padding-top: 36px; */
+}
+
+#overlay_reload{
+    background-color:  #222222;
+    z-index: 999;
+    position: absolute;
+    left:0 ;
+    top: -20%;
+    width: 100%;
+    height: 150%;
+    display: none;
+    opacity: 0.5;
+}
+#overlayInit{
+    background-color:  #222222;
+    z-index: 999;
+    position: absolute;
+    left:0 ;
+    top: -20%;
+    width: 100%;
+    height: 150%;
+    display: none;
+    opacity: 0.5;
+}
+#overlay {
+    background-color:  #222222;
+    z-index: 999;
+    position: absolute;
+    left:0 ;
+    top: -20%;
+    width: 100%;
+    height: 150%;
+    display: none;
+    opacity: 0.5;
+}
+
+#overlay:lang(ar){
+    background-color:  #222222;
+    z-index: 999;
+    position: absolute;
+    left:-30% ;
+    top: -20%;
+    width: 150%;
+    height: 150%;
+    display: none;
+    opacity: 0.5;
+}
+
+.world-map-page{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    
+}
+
+.mapael path{
+    cursor: pointer;
+}
+.areaLegendimg .good-legend{
+    opacity: 0.6;
+    color: #fff;
+    padding: 0px;
+    float: left;
+}
+
+.areaLegendimg .bad-legend{
+    opacity: 0.6;
+    color: #fff;
+    padding: 0px;
+}
+
+.areaLegendimg:lang(ar) {
+    float: right;
+    bottom: 50px !important;
+    position: fixed;
+    margin-right: 10%;
+    width: 300px;
+}
+
+.areaLegendimg img:lang(en){
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+
+.legent-text {
+    width:100%;
+    text-align:center;
+    opacity: 0.6;
+    color: #fff;
+}
+
+.high-legend {
+    float:right;
+    text-align: right;
+}
+.medium-legend {
+    display: inline-block;
+    margin:0 auto;
+    padding: 0 86px;
+}
+
+.low-legend {
+    float:left;
+    text-align: left;
+}
+
+.footer.timeline hr:lang(ar){
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.footer.timeline ul li:last-child hr{
+    width: 0px !important;
+}
+
+
+@media screen and  (min-width: 900px) and (max-width: 1100px) {
+
+    .areaLegendimg {
+    margin-left: 66%;
+    }
+    .areaLegendimg:lang(ar) {
+    margin-right: 66%;
+    }
+}
+
+.page-perLoader{
+    background:#000;
+    opacity: 0.8;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.page-perLoader-img{
+    background:url(../../../public/icons/logo.png) no-repeat;
+    background-size: 70%;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 35%;
+    left: 45%;
+    animation: fadeIn 1.5s infinite alternate;
+}
+.page-preLoader-img{
+    background:url(../../../public/loadingCells.gif) no-repeat;
+    background-size: 70%;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 35%;
+    left: 45%;
+    animation: fadeIn 1.5s infinite alternate;
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0.2; } 
+}
+
+/*.mapael .map{
+    min-width: 125%;
+    position: relative;
+    display: block
+}
+
+.mapael .map svg{
+    overflow: inherit !important;
+    position: relative;
+    margin: auto;
+    padding-left: 0%;
+    display: block;
+    width: 65% !important;
+}*/
+   
+   /* Then Zoom In button */
+.mapael .zoomIn:lang(ar) {
+    top: 33px;
+    right: 15px;
+    left: initial;
+    margin-top: 118px;
+}
+
+/* Then Zoom Out button */
+.mapael .zoomOut:lang(ar) {
+    top: 56px;
+    right: 15px;
+    left: initial;
+    margin-top: 120px;
+}

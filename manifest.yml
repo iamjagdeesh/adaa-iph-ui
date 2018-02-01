@@ -1,0 +1,8 @@
+---
+applications:
+- name: iph-report
+  host: iph-report
+  memory: 1024M
+  instances: 1
+  env:
+    APIURL: https://iph-service-local.cfapps.io/iph/

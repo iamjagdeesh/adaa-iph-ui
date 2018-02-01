@@ -1,0 +1,8 @@
+---
+applications:
+- name: adaa-iph-uat
+  host: adaa-iph-uat
+  memory: 1024M
+  instances: 1
+  env:
+    APIURL: https://adaa-iph-service-uat.cfapps.io/iph/

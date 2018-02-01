@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Etelka-Light !important;
+  background-color: #000 !important;
+}
+
+body:lang(ar) {
+  margin: 0;
+  padding: 0;
+  font-family:Gothic-Arabic !important;
+}
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #3f3f3f; 
+    height: 7px;
+    /*opacity: 0.1;*/
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+    background-color: #3f3f3f;
+    /*opacity: 0.1;*/
+}
+::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    /*opacity: 0.2;*/
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+    /*opacity: 0.2;*/
+}
+
+@font-face {
+    font-family: Etelka-Light;
+    src: url("./fonts/Etelka-Light-Pro_16165.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Etelka-Medium;
+    src: url("./fonts/Etelka-Medium-Pro_16169.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Etelka-Text-Pro;
+    src: url("./fonts/Etelka-Text-Pro_16187.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Etelka-Text-Pro-B;
+    src: url("./fonts/Etelka-Text-Pro-Bold_16185.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gothic-Arabic;
+    src: url("./fonts/ITC-Handel-Gothic-Arabic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gothic-Arabic-Medium;
+    src: url("./fonts/ITC-Handel-Gothic-Arabic-Medium.otf") format("opentype");
+}
